@@ -22,4 +22,4 @@ services:
 
 networks:
   traefik:
-  external: true
+    external: true
