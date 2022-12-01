@@ -7,8 +7,8 @@ services:
     ports:
       - 5000:5000
       - 5001:5001
-    volumes:
-      - ./:/App
+#     volumes:
+#       - ./:/App
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       DOTNET_GENERATE_ASPNET_CERTIFICATE: "true"
