@@ -1,0 +1,72 @@
+@model IEnumerable<UsuarioModel>
+<link rel="stylesheet" href="~/css/tabela.css">
+
+<div class="container">
+    <header class="d-flex justify-content-between align-tems-center">
+        <div>
+            <h2 class="text-primary">Administração</h2>
+        </div>
+        <div>
+            <a asp-action="Cadastrar" class="btn btn-primary"><i class="bi bi-plus"></i> Novo Usuario</a>
+        </div>
+    </header>
+    <hr>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item me-1">
+                    <a class="nav-link btn btn-light text-dark" asp-controller="Categoria" asp-action="Index">Gerir Categorias</a>
+                </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link btn btn-light text-dark" asp-controller="Fornecedor" asp-action="Index">Gerir Fornecedores</a>
+                </li>
+                <li class="nav-item me-1">
+                    <a class="nav-link btn btn-light text-dark" asp-controller="Categoria" asp-action="Index">Gerir Configurações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-light text-dark" asp-controller="Usuario" asp-action="Index">Gerir Perfil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr>
+    <div class="container">
+        <h1 class="display2">LISTA DE USUÁRIOS DO SISTEMA</h1>
+    </div>
+
+    @if (Model.Count() > 0)
+    {
+        <div class="container">
+            <table class="table table-striped table-sm table-hover">
+                <thead class="bg-dark bg-gradient text-white">
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Administrador</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var usuario in Model)
+                    {
+                        <tr>
+                            <td>@usuario.Nome</td>
+                            <td>@usuario.Email</td>
+                            <td>@(usuario.IsAdmin ? "Sim" : "Não")</td>
+                            <td>
+                                <a asp-action="Alterar" asp-route-id="@usuario.IdUsuario" class="btn btn-sm btn-success">
+                                    <i class="bi bi-pencil" title="Alterar"></i> </a>
+                                <a asp-action="Excluir" asp-route-id="@usuario.IdUsuario" class="btn btn-sm btn-danger">
+                                    <i class="bi bi-trash" title="Excluir"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p>Não há nenhum Usuario Cadastrado.</p>
+    }
+</div>
