@@ -4,8 +4,6 @@ services:
   app:
     build: .
     container_name: app_dotnet
-    volumes:
-      - ./:/App
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       DOTNET_GENERATE_ASPNET_CERTIFICATE: "true"
@@ -22,4 +20,4 @@ services:
 
 networks:
   traefik:
-  external: true
+    external: true
