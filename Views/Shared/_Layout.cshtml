@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="/lib/lightbox2/dist/css/lightbox.min.css">
     <script src="/lib/lightbox2/dist/js/lightbox-plus-jquery.min.js" defer></script>
-     <script src="https://kit.fontawesome.com/95a02bd20d.js" defer></script>
+    <script src="https://kit.fontawesome.com/95a02bd20d.js" defer></script>
     <title>Autenticação</title>
 </head>
 
@@ -25,18 +25,15 @@
 
 <body class="bg-light">
 
-    <nav class="navbar navbar-expand-sm bg-image" style="background-image: url('/img/bg-aliancas2.jpeg'); width: 100vw;">
+    @* <nav class="navbar navbar-expand-sm bg-image" style="background-image: url('/img/bg-aliancas2.jpeg'); width: 100vw;"> *@
+     <nav class="navbar navbar-expand-sm navbar-light bg-danger bg-opacity-10">
         <div class="container">
-            <a class="navbar-brand" asp-controller="Home" asp-action="Index"><i class="bi-heart-arrow text-danger"></i> DESCOMPLI<span class="text-danger">CASE</span></a>
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index"><i class="bi-heart text-danger"></i> DESCOMPLI<span class="text-danger">CASE</span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-items-center" id="navMenu">
                 <ul class="navbar-nav mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        @* <h6 class="nav-link text-white"> <i class="bi-person"></i> @User.Identity.Name</h6> *@
-                        <a class="nav-link me-5" asp-controller="Usuario" asp-action="Index"><i class="bi-person text-info"></i>@User.Identity.Name</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="Home" asp-action="Index">Principal</a>
                     </li>
@@ -58,14 +55,30 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
                         </li>
+                        <li class="nav-tem">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-person"></i> Logado como <b>@User.Identity.Name</b></a>
+                                <ul class="dropdown-menu ms-auto">
+                                    <li>
+                                        <a href="#" class="dropdown-item">Perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Alterar Senha</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Sair</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     }
                     else
                     {
                         <li class="nav-item">
-                            <a class="nav-link btn btn-primary" asp-controller="Home" asp-action="Login">Login</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Login">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-danger ms-2" asp-controller="Home" asp-action="Cadastrar">Cadastre-se!</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Cadastrar">Cadastre-se!</a>
                         </li>
                     }
 
@@ -83,8 +96,8 @@
 
     <div style="height: 96px;"></div>
 
-    <footer class="fixed-bottom p-3 text-center text-black bg-image" style="background-image: url('/img/bg-aliancas2.jpeg'); width: 100vw;">
-        Copyright &copy; @DateTime.Now.Year<br>
+    <footer class="sticky-bottom p-3 text-center bg-image" style="background-image: url('/img/bg-aliancas2.jpeg'); width: 100vw;">
+        Copyright DescompliCase &copy; @DateTime.Now.Year<br>
         Todos os direitos reservados
     </footer>
 </body>
