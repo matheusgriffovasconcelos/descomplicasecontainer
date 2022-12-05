@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Descomplicase\\DescomplicaseApp\\DescomplicaseApp.csproj": {}
+    "/App/DescomplicaseApp.csproj": {}
   },
   "projects": {
-    "C:\\Descomplicase\\DescomplicaseApp\\DescomplicaseApp.csproj": {
+    "/App/DescomplicaseApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Descomplicase\\DescomplicaseApp\\DescomplicaseApp.csproj",
+        "projectUniqueName": "/App/DescomplicaseApp.csproj",
         "projectName": "DescomplicaseApp",
-        "projectPath": "C:\\Descomplicase\\DescomplicaseApp\\DescomplicaseApp.csproj",
-        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Descomplicase\\DescomplicaseApp\\obj\\",
+        "projectPath": "/App/DescomplicaseApp.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/App/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -71,7 +71,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.403/RuntimeIdentifierGraph.json"
         }
       }
     }
