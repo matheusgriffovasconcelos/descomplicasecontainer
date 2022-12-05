@@ -15,6 +15,7 @@ services:
       - "traefik.http.routers.descomplicase.tls=true"
       - "traefik.http.routers.descomplicase.tls.certresolver=letsencrypt"
       - "traefik.http.routers.descomplicase.entrypoints=websecure"
+      - "traefik.http.services.descomplicase.loadbalancer.server.scheme=https"
       - "traefik.http.services.descomplicase.loadbalancer.server.port=5001"
     networks:
       - traefik
