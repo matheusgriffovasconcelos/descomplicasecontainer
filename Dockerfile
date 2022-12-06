@@ -15,4 +15,4 @@ RUN dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation --versi
 EXPOSE 5000/tcp
 EXPOSE 5001/tcp
 
-ENTRYPOINT ["dotnet", "DescomplicaseApp.dll"]
+ENTRYPOINT ["dotnet", "run"]
