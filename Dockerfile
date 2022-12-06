@@ -20,9 +20,9 @@ WORKDIR /app
 #para o diretório de trabalho da imagem de produção
 COPY --from=build /app ./
 #copia o arquivo do banco de dados para o diretório de trabalho
-COPY --from=build /source/dados.db ./
-#expõe a porta 5000 para o aplicativo
-# EXPOSE 5000
+
+EXPOSE 5000
+EXPOSE 5001
 #executa o aplicativo
 ENTRYPOINT ["dotnet", "DescomplicaseApp.dll"]
 
