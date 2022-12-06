@@ -7,8 +7,15 @@ WORKDIR /source
 COPY . .
 #restaura as dependências
 RUN dotnet restore "DescomplicaseApp.csproj" --disable-parallel
+#instala a ferramenta de migração do EF Core
+RUN dotnet tool install --global dotnet-ef
 #adiciona o diretório de ferramentas ao PATH
 ENV PATH="${PATH}:/root/.dotnet/tools"
+#cria uma migração do banco de dados
+RUN dotnet ef migrations add final --project "DescomplicaseApp.csproj"
+#aplica a migração do banco de dados
+RUN dotnet ef database update --project "DescomplicaseApp.csproj"
+#publica o aplicativo em modo release no diretório /app
 RUN dotnet publish "DescomplicaseApp.csproj" -c Release -o /app --no-restore
 
 #PRODUÇÃO
@@ -20,9 +27,11 @@ WORKDIR /app
 #para o diretório de trabalho da imagem de produção
 COPY --from=build /app ./
 #copia o arquivo do banco de dados para o diretório de trabalho
-
+COPY --from=build /source/descomplicase.db ./
+#expõe a porta 5000 para o aplicativo
 EXPOSE 5000
 EXPOSE 5001
+
 #executa o aplicativo
 ENTRYPOINT ["dotnet", "DescomplicaseApp.dll"]
 
