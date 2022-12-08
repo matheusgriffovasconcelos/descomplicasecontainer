@@ -9,7 +9,7 @@ services:
       ASPNETCORE_URLS: "http://+:5000"
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.descomplicase.rule=Host(`app.descomplicase.com.br`)"
+      - "traefik.http.routers.descomplicase.rule=Host(`descomplicase.com.br`)"
       - "traefik.http.routers.descomplicase.tls=true"
       - "traefik.http.routers.descomplicase.tls.certresolver=letsencrypt"
       - "traefik.http.routers.descomplicase.entrypoints=websecure"
