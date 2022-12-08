@@ -7,10 +7,11 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       DOTNET_GENERATE_ASPNET_CERTIFICATE: "true"
-      ASPNETCORE_HTTP_PORT: https://+:5001;http://+:5000
-      ASPNETCORE_URLS: https://+:5001;http://+:5000
+      ASPNETCORE_HTTP_PORT: "https://+:5001;http://+:5000"
+      ASPNETCORE_URLS: "https://+:5001;http://+:5000"
     labels:
       - "traefik.enable=true"
+      - "traefik.port=80"
       - "traefik.http.routers.descomplicase.rule=Host(`app.descomplicase.com.br`)"
       - "traefik.http.routers.descomplicase.tls=true"
       - "traefik.http.routers.descomplicase.tls.certresolver=letsencrypt"
