@@ -15,32 +15,35 @@
     <title>DescompliCase</title>
 </head>
 
-<body class="bg-light">
+<body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light bg-opacity-25 border-bottom border-danger border-3 border-opacity-10">
         <div class="container">
-            <a class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only" asp-controller="Home" asp-action="Index"><i class="bi-heart text-danger"></i> DESCOMPLI<span class="text-danger">CASE</span></a>
+            <a class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only" asp-controller="Home" asp-action="Index"><i class="bi-heart text-danger mx-1"></i>DESCOMPLI<span class="text-danger">CASE</span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navMenu">
+            <div class="collapse navbar-collapse justify-content-end align-items-center text-center" id="navMenu">
                 <ul class="navbar-nav mt-lg-0">
 
                     @if (User.Identity.IsAuthenticated)
                     {
+                        @if (User.IsInRole("admin"))
+                        {
+                            <li class="nav-item mx-3 my-3">
+                                <a class="nav-link" asp-controller="Usuario" asp-action="Index">Administrar</a>
+                            </li>
+                        }
                         <li class="nav-item mx-3 my-3">
                             <a class="nav-link" asp-controller="Categoria" asp-action="Index">Categorias</a>
-                        </li>
-                        <li class="nav-item mx-3 my-3">
-                            <a class="nav-link" asp-controller="Usuario" asp-action="Index">Administrar</a>
                         </li>
                         <li class="nav-item mx-3 my-3">
                             <a class="nav-link" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
                         </li>
 
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle link-dark my-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-person-circle h2"></i></a>
+                            <a href="#" class="nav-link dropdown-toggle link-dark my-1 text-primary" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-person-circle h2 text-primary"></i></a>
                             <ul class="dropdown-menu">
-                                <p class="dropdown-header"><b>@User.Identity.Name</b></p>
+                                <p class="dropdown-header text-info"><b>@User.Identity.Name</b></p>
                                 <li>
                                     <a href="#" class="dropdown-item">Perfil</a>
                                 </li>
@@ -52,8 +55,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="nav-link link-dark my-1" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-                            <i class="bi-house h2"></i>
+                        <a asp-controller="Home" asp-action="Index" class="nav-link link-dark my-1" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                            <i class="bi-house h2 text-danger opacity-10"></i>
                         </a>
 
                     }
@@ -74,16 +77,15 @@
         @RenderBody()
     </main>
 
-    <div class="col-12" style="height: 96px;"></div>
+    @* <div class="col-12" style="height: 96px;"></div> *@
 
-    <footer class="text-center bg-danger bg-opacity-75 p-2">
+    <footer class="col-12 text-center bg-danger bg-opacity-75 p-2">
         <div class="container mt-4">
             <p class="text-light">
                 Copyright DescompliCase &copy; @DateTime.Now.Year<br>
                 Todos os direitos reservados</p>
         </div>
     </footer>
-
 </body>
 
 

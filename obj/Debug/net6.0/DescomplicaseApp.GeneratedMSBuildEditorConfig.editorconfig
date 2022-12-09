@@ -8,109 +8,109 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DescomplicaseApp
 build_property.RootNamespace = DescomplicaseApp
-build_property.ProjectDir = c:\Users\mathe\OneDrive\Área de Trabalho\Nova pasta\descomplicasecontainer\
+build_property.ProjectDir = C:\Users\mathe\OneDrive\Área de Trabalho\Site\descomplicasecontainer\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = c:\Users\mathe\OneDrive\Área de Trabalho\Nova pasta\descomplicasecontainer
+build_property.MSBuildProjectDirectory = C:\Users\mathe\OneDrive\Área de Trabalho\Site\descomplicasecontainer
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Categoria/Alterar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Categoria/Alterar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEFsdGVyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Categoria/Cadastrar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Categoria/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENhZGFzdHJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Categoria/Excluir.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Categoria/Excluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEV4Y2x1aXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Categoria/Index.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Fornecedor/Alterar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Fornecedor/Alterar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxBbHRlcmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Fornecedor/Cadastrar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Fornecedor/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Fornecedor/Excluir.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Fornecedor/Excluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxFeGNsdWlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Fornecedor/Index.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Fornecedor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Home/Administrar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Home/Administrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbmlzdHJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Home/Cadastrar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Home/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Home/Index.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Home/Login.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Home/Proibida.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Home/Proibida.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9pYmlkYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Home/Restrita.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Home/Restrita.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXN0cml0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Produto/Alterar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Produto/Alterar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBbHRlcmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Produto/Cadastrar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Produto/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Produto/Excluir.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Produto/Excluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xFeGNsdWlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Produto/Index.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Produto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Shared/_Layout.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Usuario/Alterar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Usuario/Alterar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBbHRlcmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Usuario/Cadastrar.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Usuario/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Usuario/Excluir.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Usuario/Excluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFeGNsdWlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/Usuario/Index.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/_ViewImports.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mathe/OneDrive/Área de Trabalho/Nova pasta/descomplicasecontainer/Views/_ViewStart.cshtml]
+[C:/Users/mathe/OneDrive/Área de Trabalho/Site/descomplicasecontainer/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
