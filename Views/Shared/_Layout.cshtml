@@ -27,18 +27,19 @@
 
                     @if (User.Identity.IsAuthenticated)
                     {
+                        <li class="nav-item my-3">
+                            <a class="nav-link text-info border border-1 border-info border-opacity-50 me-1" asp-controller="Categoria" asp-action="Index">Categorias</a>
+                        </li>
+                        <li class="nav-item  my-3">
+                            <a class="nav-link text-info border border-1 border-info border-opacity-50" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
+                        </li>
+
                         @if (User.IsInRole("admin"))
                         {
-                            <li class="nav-item mx-3 my-3">
-                                <a class="nav-link" asp-controller="Usuario" asp-action="Index">Administrar</a>
-                            </li>
+                            <a asp-controller="Usuario" asp-action="Index" class="nav-link link-dark my-1" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                            <i class="bi-house-gear h2 text-warning"></i>
+                        </a>
                         }
-                        <li class="nav-item mx-3 my-3">
-                            <a class="nav-link" asp-controller="Categoria" asp-action="Index">Categorias</a>
-                        </li>
-                        <li class="nav-item mx-3 my-3">
-                            <a class="nav-link" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
-                        </li>
 
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle link-dark my-1 text-primary" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-person-circle h2 text-primary"></i></a>
