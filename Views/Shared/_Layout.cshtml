@@ -12,94 +12,78 @@
     <link rel="stylesheet" href="/lib/lightbox2/dist/css/lightbox.min.css">
     <script src="/lib/lightbox2/dist/js/lightbox-plus-jquery.min.js" defer></script>
     <script src="https://kit.fontawesome.com/95a02bd20d.js" defer></script>
-    <title>Autenticação</title>
+    <title>DescompliCase</title>
 </head>
 
-
-@* <div class="bg-image" style="
-    background: url('https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
-    height: 100vh;
-    "> *@
-
-@* <div class="bg-image" style="background-image: url('/img/bg-aliancas2.jpeg'); height: 100vh;"> *@
-
-<body style="background: url('/img/fundo5.jpeg'); background-repeat: round;">
-
-    @* <nav class="navbar navbar-expand-sm bg-image" style="background-image: url('/img/bg-aliancas2.jpeg'); width: 100vw;"> *@
-     <nav class="navbar navbar-expand-sm navbar-dark bg-danger bg-opacity-25 p-3">
+<body class="bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light bg-opacity-25 border-bottom border-danger border-3 border-opacity-10">
         <div class="container">
-            <a class="navbar-brand" asp-controller="Home" asp-action="Index"><i class="bi-heart text-danger"></i> DESCOMPLI<span class="text-danger">CASE</span></a>
+            <a class="navbar-brand" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only" asp-controller="Home" asp-action="Index"><i class="bi-heart text-danger"></i> DESCOMPLI<span class="text-danger">CASE</span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-items-center" id="navMenu">
-                <ul class="navbar-nav mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Home" asp-action="Index">Principal</a>
-                    </li>
+                <ul class="navbar-nav mt-lg-0">
 
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Logout">Logout</a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3 my-3">
                             <a class="nav-link" asp-controller="Categoria" asp-action="Index">Categorias</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Produto" asp-action="Index">Produtos</a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3 my-3">
                             <a class="nav-link" asp-controller="Usuario" asp-action="Index">Administrar</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mx-3 my-3">
                             <a class="nav-link" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
                         </li>
-                        <li class="nav-tem">
-                            <div class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi-person"></i> Logado como <b>@User.Identity.Name</b></a>
-                                <ul class="dropdown-menu ms-auto">
-                                    <li>
-                                        <a href="#" class="dropdown-item">Perfil</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">Alterar Senha</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">Sair</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle link-dark my-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-person-circle h2"></i></a>
+                            <ul class="dropdown-menu">
+                                <p class="dropdown-header"><b>@User.Identity.Name</b></p>
+                                <li>
+                                    <a href="#" class="dropdown-item">Perfil</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Alterar Senha</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Home" asp-action="Logout">Sair</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="nav-link link-dark my-1" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                            <i class="bi-house h2"></i>
+                        </a>
+
                     }
                     else
                     {
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Login">Login</a>
+                        <li class="nav-item mx-2 my-2">
+                            <button class="btn btn-info rounded-5 opacity-50 px-3 py-1 shadow"><a class="nav-link link-light" asp-controller="Home" asp-action="Cadastrar"><b>Começar</b></a></button>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Cadastrar">Cadastre-se!</a>
+                        <li class="nav-item mx-2 my-2">
+                            <button class="btn btn-outline-info rounded-5 px-4 py-1 shadow"><a class="nav-link link-info" asp-controller="Home" asp-action="Login">Entrar</a></button>
                         </li>
                     }
-
-                    @* <li class="nav-item">
-                        <a class="nav-link" asp-controller="Home" asp-action="Restrita">Restrita</a>
-                        </li> *@
                 </ul>
             </div>
         </div>
     </nav>
-
-    <main class="container">
+    <main>
         @RenderBody()
     </main>
 
-    <div style="height: 96px;"></div>
+    <div class="col-12" style="height: 96px;"></div>
 
-    <footer class="p-3 text-center text-white bg-danger bg-opacity-25">
-        Copyright DescompliCase &copy; @DateTime.Now.Year<br>
-        Todos os direitos reservados
+    <footer class="text-center bg-danger bg-opacity-75 p-2">
+        <div class="container mt-4">
+            <p class="text-light">
+                Copyright DescompliCase &copy; @DateTime.Now.Year<br>
+                Todos os direitos reservados</p>
+        </div>
     </footer>
+
 </body>
 
 
