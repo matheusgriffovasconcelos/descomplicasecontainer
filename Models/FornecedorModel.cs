@@ -1,6 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
+
 namespace Auth.Models;
 
 public class FornecedorModel
@@ -44,4 +46,19 @@ public class FornecedorModel
 
     [Display(Name = "Categoria")]
     public CategoriaModel Categoria { get; set; }
+
+    [NotMapped]
+    [Required(ErrorMessage = "A imagem não foi enviada.")]
+    [Display(Name = "Arquivo de Imagem")]
+    public IFormFile ArquivoImagem { get; set; }
+
+    [NotMapped]
+    public string CaminhoImagem
+    {
+        get
+        {
+            var caminhoImagem = Path.Combine($"\\img\\fornecedor\\", this.Id.ToString("D6") + ".jpg");
+            return caminhoImagem;
+        }
+    }
 }

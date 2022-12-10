@@ -1,7 +1,7 @@
-@model ProdutoModel
+@model FornecedorModel
 
 <div class="container">
-    <h2 class="text-primary">Alteração de Produto</h2>
+    <h2 class="text-primary">Alteração de Fornecedor</h2>
     <hr>
     <form asp-action="Alterar" method="post" enctype="multipart/form-data">
         <input type="hidden" asp-for="@Model.Id">
@@ -13,15 +13,31 @@
         </div>
 
         <div class="form-floating">
-            <input type="text" class="form-control" placeholder="" asp-for="@Model.Estoque">
-            <label asp-for="@Model.Estoque"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.Preco"></span>
+            <input type="text" class="form-control" placeholder="(99)99999-9999" asp-for="@Model.Telefone">
+            <label asp-for="@Model.Telefone"></label><br>
+            <span class="text-danger" asp-validation-for="@Model.Telefone"></span>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" placeholder="Cidade" asp-for="@Model.Cidade">
+            <label asp-for="@Model.Cidade"></label><br>
+            <span class="text-danger" asp-validation-for="@Model.Cidade"></span>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" placeholder="Estado" asp-for="@Model.UF">
+            <label asp-for="@Model.UF"></label><br>
+            <span class="text-danger" asp-validation-for="@Model.UF"></span>
         </div>
 
         <div class="form-floating">
-            <input type="text" class="form-control" placeholder="" asp-for="@Model.Preco">
-            <label asp-for="@Model.Preco"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.Preco"></span>
+            <input type="text" class="form-control" placeholder="Bairro" asp-for="@Model.Bairro">
+            <label asp-for="@Model.Bairro"></label><br>
+            <span class="text-danger" asp-validation-for="@Model.Bairro"></span>
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" placeholder="Rua/Numero" asp-for="@Model.RuaNumero">
+            <label asp-for="@Model.RuaNumero"></label><br>
+            <span class="text-danger" asp-validation-for="@Model.RuaNumero"></span>
         </div>
 
         <div class="form-floating mb-4">

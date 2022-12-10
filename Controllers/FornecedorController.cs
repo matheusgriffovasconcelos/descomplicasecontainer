@@ -60,7 +60,11 @@ public class FornecedorController : Controller
             return View(fornecedor);
         }
         _db.Fornecedores.Add(fornecedor);
-        _db.SaveChanges();
+        if (_db.SaveChanges() > 0)
+        {
+            var caminhoImagem = $"{_env.WebRootPath}//img//fornecedor//{fornecedor.Id.ToString("D6")}.jpg";
+            SalvarUploadImagemAsync(caminhoImagem, fornecedor.ArquivoImagem).Wait();
+        }
         return RedirectToAction("Index");
     }
 
@@ -84,15 +88,17 @@ public class FornecedorController : Controller
         {
             return RedirectToAction("Index");
         }
-        if (!ModelState.IsValid)
-        {
-            CarregarCategorias(fornecedor.IdCategoria);
-            return View(fornecedor);
-        }
+
+        CarregarCategorias(fornecedor.IdCategoria);
         fornecedorOriginal.Nome = fornecedor.Nome;
         fornecedorOriginal.IdCategoria = fornecedor.IdCategoria;
         _db.SaveChanges();
-        
+        if (fornecedor.ArquivoImagem is not null)
+        {
+            var caminhoImagem = $"{_env.WebRootPath}//img//fornecedor//{fornecedor.Id.ToString("D6")}.jpg";
+            SalvarUploadImagemAsync(caminhoImagem, fornecedor.ArquivoImagem).Wait();
+        }
+
         return RedirectToAction("Index");
     }
 
@@ -118,5 +124,35 @@ public class FornecedorController : Controller
         _db.Fornecedores.Remove(fornecedorOriginal);
         _db.SaveChanges();
         return RedirectToAction("Index");
+    }
+
+    public async Task<bool> SalvarUploadImagemAsync(
+       string caminhoArquivoImagem, IFormFile imagem,
+       bool salvarQuadrada = true)
+    {
+        if (imagem is null)
+        {
+            return false;
+        }
+        var ms = new MemoryStream();
+        await imagem.CopyToAsync(ms);
+        ms.Position = 0;
+        var img = await Image.LoadAsync(ms);
+
+        if (salvarQuadrada)
+        {
+            var tamanho = img.Size();
+            var ladoMenor = (tamanho.Height < tamanho.Width) ? tamanho.Height : tamanho.Width;
+            img.Mutate(i =>
+                i.Resize(new ResizeOptions()
+                {
+                    Size = new Size(ladoMenor, ladoMenor),
+                    Mode = ResizeMode.Crop
+                })
+            );
+        }
+
+        await img.SaveAsJpegAsync(caminhoArquivoImagem);
+        return true;
     }
 }
