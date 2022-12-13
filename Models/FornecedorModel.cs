@@ -2,7 +2,6 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-
 namespace Auth.Models;
 
 public class FornecedorModel
@@ -31,21 +30,22 @@ public class FornecedorModel
     [Display(Name = "Estado(UF)")]
     public string UF { get; set; }
 
-    [StringLength(64, ErrorMessage = "O campo {0} comporta até {1} caracteres apenas.")]
-    [Display(Name = "Bairro")]
-    public string Bairro { get; set; }
+    [Display(Name = "Valor à partir de...")]
+    public double aPartir { get; set; }
 
-    [StringLength(64, ErrorMessage = "O campo {0} comporta até {1} caracteres apenas.")]
-    [Display(Name = "Rua/Numero")]
-    public string RuaNumero { get; set; }
+    [Display(Name = "Valor por Pessoa")]
+    public double ValorPessoa { get; set; }
 
-    [ForeignKey("Categoria")]
     [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
-    [Display(Name = "Categoria")]
-    public int? IdCategoria { get; set; }
+    [Display(Name = "Valor Total")]
+    public double ValorTotal { get; set; }
 
-    [Display(Name = "Categoria")]
-    public CategoriaModel Categoria { get; set; }
+    [Display(Name = "Caracteristicas")]
+    public string Caracteristicas { get; set; }
+
+    [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
+    [Display(Name = "É Premium?")]
+    public bool IsPremium { get; set; }
 
     [NotMapped]
     [Required(ErrorMessage = "A imagem não foi enviada.")]
@@ -61,4 +61,12 @@ public class FornecedorModel
             return caminhoImagem;
         }
     }
+
+    [ForeignKey("Categoria")]
+    [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
+    [Display(Name = "Categoria")]
+    public int? IdCategoria { get; set; }
+
+    [Display(Name = "Categoria")]
+    public CategoriaModel Categoria { get; set; }
 }

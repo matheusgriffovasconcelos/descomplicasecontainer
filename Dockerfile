@@ -12,9 +12,9 @@ RUN dotnet tool install --global dotnet-ef
 #adiciona o diretório de ferramentas ao PATH
 ENV PATH="${PATH}:/root/.dotnet/tools"
 #cria uma migração do banco de dados
-#RUN dotnet ef migrations add final --project "DescomplicaseApp.csproj"
+# RUN dotnet ef migrations add final --project "DescomplicaseApp.csproj"
 #aplica a migração do banco de dados
-#RUN dotnet ef database update --project "DescomplicaseApp.csproj"
+# RUN dotnet ef database update --project "DescomplicaseApp.csproj"
 #publica o aplicativo em modo release no diretório /app
 RUN dotnet publish "DescomplicaseApp.csproj" -c Release -o /app --no-restore
 

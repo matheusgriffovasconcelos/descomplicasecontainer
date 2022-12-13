@@ -10,6 +10,8 @@ public class AppDbContext : DbContext
     public DbSet<CategoriaModel> Categorias { get; set; }
     public DbSet<ProdutoModel> Produtos { get; set; }
     public DbSet<FornecedorModel> Fornecedores { get; set; }
+    public DbSet<OrcamentoModel> Orcamentos { get; set; }
+
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {

@@ -16,25 +16,44 @@
     <section class="bg-light bg-opacity-10">
         <main class="container-lg container-fluid">
             <div class="row align-items-center" style="height: 100vh">
-                <div class="col-8 col-lg-4 mx-auto border border-danger border-opacity-50 p-3 rounded">
+                <div class="col-8 col-lg-6 mx-auto border border-danger border-opacity-50 p-3 rounded">
                     <h1 class="display-4 mb-3 text-danger text-opacity-50 text-center">Cadastre-se!</h1>
                     <form method="post">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" asp-for="@Model.Nome" placeholder="Nome Completo">
-                            <label asp-for="@Model.Nome"></label>
-                            <span class="small text-danger ps-2" asp-validation-for="@Model.Nome"></span>
+                        <div class="row">
+                            <div class="col form-floating mb-1">
+                                <input class="form-control" asp-for="@Model.Nome" placeholder="Nome Completo">
+                                <label class="p-3" asp-for="@Model.Nome"></label>
+                                <span class="small text-danger ps-2" asp-validation-for="@Model.Nome"></span>
+                            </div>
+                            <div class="col form-floating mb-1">
+                                <input class="form-control" asp-for="@Model.SobreNome" placeholder="Sobrenome">
+                                <label class="p-3" asp-for="@Model.SobreNome"></label>
+                                <span class="small text-danger ps-2" asp-validation-for="@Model.SobreNome"></span>
+                            </div>
                         </div>
-                        <div class="form-floating mb-3">
+                        <div class="row">
+                            <div class="col form-floating mb-1">
+                                <input class="form-control" asp-for="@Model.NomeConjuge" placeholder="Sobrenome">
+                                <label class="p-3" asp-for="@Model.NomeConjuge"></label>
+                                <span class="small text-danger ps-2" asp-validation-for="@Model.NomeConjuge"></span>
+                            </div>
+                            <div class="col form-floating mb-1">
+                                <input class="form-control" type="date" value="2023-01-01" asp-for="@Model.DataCasamento" placeholder="Sobrenome">
+                                <label class="p-3" asp-for="@Model.DataCasamento"></label>
+                                <span class="small text-danger ps-2" asp-validation-for="@Model.DataCasamento"></span>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-1">
                             <input class="form-control" asp-for="@Model.Email" placeholder="nome@@email.com">
                             <label asp-for="@Model.Email"></label>
                             <span class="small text-danger ps-2" asp-validation-for="@Model.Email"></span>
                         </div>
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-1">
                             <input class="form-control" asp-for="@Model.Senha" placeholder="123456">
                             <label asp-for="@Model.Senha"></label>
                             <span class="small text-danger ps-2" asp-validation-for="@Model.Senha"></span>
                         </div>
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-1">
                             <input class="form-control" asp-for="@Model.ConfSenha" placeholder="123456">
                             <label asp-for="@Model.ConfSenha"></label>
                             <span class="small text-danger ps-2" asp-validation-for="@Model.ConfSenha"></span>

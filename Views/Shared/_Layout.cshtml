@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -31,7 +32,10 @@
                             <a class="nav-link text-info border border-1 border-info border-opacity-50 me-1" asp-controller="Categoria" asp-action="Index">Categorias</a>
                         </li>
                         <li class="nav-item  my-3">
-                            <a class="nav-link text-info border border-1 border-info border-opacity-50" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
+                            <a class="nav-link text-info border border-1 border-info border-opacity-50 me-1" asp-controller="Fornecedor" asp-action="Index">Fornecedores</a>
+                        </li>
+                        <li class="nav-item  my-3">
+                            <a class="nav-link text-info border border-1 border-info border-opacity-50" asp-controller="Orcamento" asp-action="Index">Orçamento</a>
                         </li>
 
                         @if (User.IsInRole("admin"))

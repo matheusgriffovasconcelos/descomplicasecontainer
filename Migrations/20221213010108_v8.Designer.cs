@@ -3,6 +3,7 @@ using System;
 using Auth.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DescomplicaseApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221213010108_v8")]
+    partial class v8
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
@@ -192,7 +195,7 @@ namespace DescomplicaseApp.Migrations
                             Email = "admin@email.com",
                             IsAdmin = true,
                             Nome = "Administrador do Sistema",
-                            Senha = "$2a$10$3G9F7ml0GIRMn45Hgi7H7ONcDnAZsadm1bsq1NqXp3hR5t582DNnG"
+                            Senha = "$2a$10$oF66B1.Q8BHkRDCYtRNPWeqIj2xjlLgLpGpGlUxLO6xc9nsfhIlbi"
                         });
                 });
 

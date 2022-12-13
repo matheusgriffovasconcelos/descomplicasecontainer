@@ -1,0 +1,57 @@
+@model OrcamentoModel
+
+<div class="container p-3">
+    <h2 class="text-danger opacity-50 text-center">Selecionar Fornecedores</h2>
+    <hr>
+    <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="@Model.Id">
+    </form>
+</div>
+
+<div class="container">
+    <div>
+        <button class="btn btn-danger opacity-50 btn-block" data-bs-toggle="collapse" data-bs-target="#conteudo">Escolher Fornecedores <i class="bi-chevron-down"></i> </button>
+    </div>
+    <div class="collapse" id="conteudo">
+        @foreach (var item in @ViewBag.Categorias)
+        {
+            <h6 class="h5 text-secondary p-3">Categoria: @item.Nome <br></h6>
+            <div class="row row-cols-2 row-cols-lg-4 mb-5">
+                @foreach (var fornecedor in @ViewBag.Fornecedores)
+                {
+                    if (item.Id == fornecedor.IdCategoria)
+                    {
+                        <div class="col">
+                            <div class="card">
+                                <a href='@($"{fornecedor.CaminhoImagem}?{DateTime.Now}")' data-lightbox="@fornecedor.Id" data-title="@fornecedor.Nome">
+                                    <img src='@($"{fornecedor.CaminhoImagem}?{DateTime.Now}")' class="card-img-top img-responsive img-thumbnail">
+                                </a>
+                                <h6 class="card-header text-center h5 text-info">@fornecedor.Nome</h6>
+                                <div class="card-body">
+                                    <h6 class="card-title lead">@fornecedor.Caracteristicas</h6>
+                                    <p class="card-subtitle text-secondary mb-2">Premium</p>
+                                    <div class="card-text">
+                                        Localização: @fornecedor.Cidade - @fornecedor.UF <br>
+                                    </div>
+                                    <div class="card-text py-2">
+                                        <span class="text-bg-success">à partir de: R$@fornecedor.aPartir</span><br>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="sim" id="marcafornecedor">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Selecionar Esse Fornecedor
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @* <p>@fornecedor.Nome | @fornecedor.Email | @fornecedor.IdCategoria</p> *@
+                    }
+                }
+            </div>
+            <hr class="text-secondary">
+        }
+    </div>
+</div>
+
+<div style="height: 80vh;"></div>

@@ -91,7 +91,15 @@ public class FornecedorController : Controller
 
         CarregarCategorias(fornecedor.IdCategoria);
         fornecedorOriginal.Nome = fornecedor.Nome;
+        fornecedorOriginal.Email = fornecedor.Email;
+        fornecedorOriginal.Telefone = fornecedor.Telefone;
         fornecedorOriginal.IdCategoria = fornecedor.IdCategoria;
+        fornecedorOriginal.Cidade = fornecedor.Cidade;
+        fornecedorOriginal.UF = fornecedor.UF;
+        fornecedorOriginal.aPartir = fornecedor.aPartir;
+        fornecedorOriginal.ValorPessoa = fornecedor.ValorPessoa;
+        fornecedorOriginal.Caracteristicas = fornecedor.Caracteristicas;
+        fornecedorOriginal.IsPremium = fornecedor.IsPremium;
         _db.SaveChanges();
         if (fornecedor.ArquivoImagem is not null)
         {

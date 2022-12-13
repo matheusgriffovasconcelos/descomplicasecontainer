@@ -10,8 +10,12 @@ public class UsuarioModel
     [Key]
     public int IdUsuario { get; set; }
 
+    [Display(Name = "Nome")]
     [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
     public string Nome { get; set; }
+
+    [Display(Name = "Sobrenome")]
+    public string SobreNome { get; set; }
 
     [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
     [DataType(DataType.EmailAddress)]
@@ -32,4 +36,12 @@ public class UsuarioModel
     [Required(ErrorMessage = "O campo {0} é de preenchimento obrigatório.")]
     [Display(Name = "Administrador?")]
     public bool IsAdmin { get; set; }
+
+    [Display(Name = "Nome do(a) Conjuge")]
+    public string NomeConjuge { get; set; }
+
+    [Display(Name = "Data do Casamento")]
+    public DateTime DataCasamento { get; set; }
+
+
 }

@@ -1,54 +1,82 @@
 @model FornecedorModel
 
-<div class="container">
-    <h2 class="text-primary">Alteração de Fornecedor</h2>
+<div class="container p-3">
+    <h2 class="text-secondary">Alteração de Fornecedor</h2>
     <hr>
     <form asp-action="Alterar" method="post" enctype="multipart/form-data">
         <input type="hidden" asp-for="@Model.Id">
 
-        <div class="form-floating">
-            <input type="text" class="form-control" placeholder="" asp-for="@Model.Nome">
-            <label asp-for="@Model.Nome"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.Nome"></span>
+        <div class="row">
+            <div class="form-floating col">
+                <input type="text" class="form-control" placeholder="Nome" asp-for="@Model.Nome">
+                <label class="mx-2" asp-for="@Model.Nome"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.Nome"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-floating col">
+                <input type="text" class="form-control" placeholder="E-mail" asp-for="@Model.Email">
+                <label class="mx-2" asp-for="@Model.Email"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.Email"></span>
+            </div>
+
+            <div class="form-floating col">
+                <input type="text" class="form-control" placeholder="(99)99999-9999" asp-for="@Model.Telefone">
+                <label class="mx-2" asp-for="@Model.Telefone"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.Telefone"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-floating col-10">
+                <input type="text" class="form-control" placeholder="Cidade" asp-for="@Model.Cidade">
+                <label class="mx-2" asp-for="@Model.Cidade"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.Cidade"></span>
+            </div>
+
+            <div class="form-floating col-2">
+                <input type="text" class="form-control" placeholder="Estado" asp-for="@Model.UF">
+                <label class="mx-2" asp-for="@Model.UF"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.UF"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-floating col">
+                <select asp-for="@Model.IdCategoria" asp-items="@ViewBag.Categorias" class="form-select">
+                    <option value="">Selecione a categoria...</option>
+                </select>
+                <label class="mx-2" asp-for="@Model.IdCategoria"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.IdCategoria"></span>
+            </div>
+
+            <div class="form-floating col">
+                <input type="number" class="form-control" asp-for="@Model.aPartir">
+                <label class="mx-2" asp-for="@Model.aPartir"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.aPartir"></span>
+            </div>
+
+            <div class="form-floating col">
+                <input type="number" class="form-control" placeholder="Valor por pessoa" asp-for="@Model.ValorPessoa">
+                <label class="mx-2" asp-for="@Model.ValorPessoa"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.ValorPessoa"></span>
+            </div>
         </div>
 
         <div class="form-floating">
-            <input type="text" class="form-control" placeholder="(99)99999-9999" asp-for="@Model.Telefone">
-            <label asp-for="@Model.Telefone"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.Telefone"></span>
-        </div>
-        <div class="form-floating">
-            <input type="text" class="form-control" placeholder="Cidade" asp-for="@Model.Cidade">
-            <label asp-for="@Model.Cidade"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.Cidade"></span>
-        </div>
-        <div class="form-floating">
-            <input type="text" class="form-control" placeholder="Estado" asp-for="@Model.UF">
-            <label asp-for="@Model.UF"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.UF"></span>
+            <input type="text" class="form-control" placeholder="Caracteristicas" asp-for="@Model.Caracteristicas">
+            <label asp-for="@Model.Caracteristicas"></label><br>
+            <span class="text-danger" asp-validation-for="@Model.Caracteristicas"></span>
         </div>
 
-        <div class="form-floating">
-            <input type="text" class="form-control" placeholder="Bairro" asp-for="@Model.Bairro">
-            <label asp-for="@Model.Bairro"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.Bairro"></span>
+        <div class="form-check form-switch mb-3">
+            <span class="text-danger" asp-validation-for="@Model.IsPremium"></span>
+            <label asp-for="@Model.IsPremium"></label>
+            <input type="checkbox" class="form-check-input" placeholder="" asp-for="@Model.IsPremium">
         </div>
 
-        <div class="form-floating">
-            <input type="text" class="form-control" placeholder="Rua/Numero" asp-for="@Model.RuaNumero">
-            <label asp-for="@Model.RuaNumero"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.RuaNumero"></span>
-        </div>
-
-        <div class="form-floating mb-4">
-            <select asp-for="@Model.IdCategoria" asp-items="@ViewBag.Categorias" class="form-select">
-                <option value="">Selecione a categoria...</option>
-            </select>
-            <label asp-for="@Model.IdCategoria"></label><br>
-            <span class="text-danger" asp-validation-for="@Model.IdCategoria"></span>
-        </div>
-
-        <div class="form-group mb-4">
+        <div class="form-group mb-4 col-6">
             <label asp-for="@Model.ArquivoImagem" class="form-label"></label><br>
             <input class="form-control" asp-for="@Model.ArquivoImagem" accept="image/*">
             <span class="text-danger" asp-validation-for="@Model.ArquivoImagem"></span>
@@ -58,11 +86,10 @@
             <img src="@Model.CaminhoImagem" class="img-thumbnail" width="200" id="imgAtual">
         </div>
 
-        <div>
-            <input type="submit" class="btn btn-sm btn-success" value="Salvar">
+        <div class="my-2">
             <a asp-action="Index" class="btn btn-sm btn-danger">Cancelar</a>
+            <input type="submit" class="btn btn-sm btn-success" value="Salvar">
         </div>
-
     </form>
 </div>
 

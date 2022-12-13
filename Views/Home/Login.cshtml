@@ -15,6 +15,7 @@
     <title>Autenticação</title>
 </head>
 
+
 <body>
     <section class="bg-light">
         <main class="container-lg container-fluid">
@@ -26,6 +27,7 @@
                             <input class="form-control" asp-for="@Model.Email" placeholder="nome@@email.com">
                             <label class="text-danger" asp-for="@Model.Email"></label>
                             <span class="small text-danger ps-2" asp-validation-for="@Model.Email"></span>
+
                         </div>
                         <div class="form-floating">
                             <input class="form-control" asp-for="@Model.Senha" placeholder="123456">
@@ -34,10 +36,14 @@
                         </div>
                         <div class="form-check form-switch mb-3">
                             <input class="form-check-input" type="checkbox" asp-for="@Model.Lembrar">
-                            <label class="form-check-label" asp-for="@Model.Lembrar">Lembrar de mim</label>
+                            <label class="form-check-label text-primary" asp-for="@Model.Lembrar">Lembrar de mim</label>
                         </div>
                         <div>
                             <button class="btn btn-outline-danger">Entrar</button>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <a href="#" class="text-decoration-none">Esqueci minha senha</a><br>
+                            <a asp-controller="Home" asp-action="Cadastrar" class="text-decoration-none">Quero me cadastrar</a>
                         </div>
                     </form>
                 </div>

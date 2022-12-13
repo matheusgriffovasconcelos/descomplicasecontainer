@@ -3,6 +3,7 @@ using System;
 using Auth.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DescomplicaseApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221212004915_v5orcamento")]
+    partial class v5orcamento
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
@@ -62,6 +65,9 @@ namespace DescomplicaseApp.Migrations
                         .HasMaxLength(64)
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("OrcamentoModelId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Telefone")
                         .IsRequired()
                         .HasMaxLength(12)
@@ -70,6 +76,9 @@ namespace DescomplicaseApp.Migrations
                     b.Property<string>("UF")
                         .HasMaxLength(2)
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("ValorIndividual")
+                        .HasColumnType("INTEGER");
 
                     b.Property<double>("ValorPessoa")
                         .HasColumnType("REAL");
@@ -84,6 +93,8 @@ namespace DescomplicaseApp.Migrations
 
                     b.HasIndex("IdCategoria");
 
+                    b.HasIndex("OrcamentoModelId");
+
                     b.ToTable("Fornecedores");
                 });
 
@@ -93,7 +104,7 @@ namespace DescomplicaseApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("FornecedorId")
+                    b.Property<int>("IdFornecedor")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("IdUsuario")
@@ -109,8 +120,6 @@ namespace DescomplicaseApp.Migrations
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("FornecedorId");
 
                     b.HasIndex("IdUsuario");
 
@@ -192,7 +201,7 @@ namespace DescomplicaseApp.Migrations
                             Email = "admin@email.com",
                             IsAdmin = true,
                             Nome = "Administrador do Sistema",
-                            Senha = "$2a$10$3G9F7ml0GIRMn45Hgi7H7ONcDnAZsadm1bsq1NqXp3hR5t582DNnG"
+                            Senha = "$2a$10$aHlmJs8s.ufcA6ShpDGd.uh44/3k4aXtwOGxc6Okb20lF4sfFC2Km"
                         });
                 });
 
@@ -204,22 +213,20 @@ namespace DescomplicaseApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Auth.Models.OrcamentoModel", null)
+                        .WithMany("Fornecedores")
+                        .HasForeignKey("OrcamentoModelId");
+
                     b.Navigation("Categoria");
                 });
 
             modelBuilder.Entity("Auth.Models.OrcamentoModel", b =>
                 {
-                    b.HasOne("Auth.Models.FornecedorModel", "Fornecedor")
-                        .WithMany()
-                        .HasForeignKey("FornecedorId");
-
                     b.HasOne("Auth.Models.UsuarioModel", "Usuario")
                         .WithMany()
                         .HasForeignKey("IdUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Fornecedor");
 
                     b.Navigation("Usuario");
                 });
@@ -233,6 +240,11 @@ namespace DescomplicaseApp.Migrations
                         .IsRequired();
 
                     b.Navigation("Categoria");
+                });
+
+            modelBuilder.Entity("Auth.Models.OrcamentoModel", b =>
+                {
+                    b.Navigation("Fornecedores");
                 });
 #pragma warning restore 612, 618
         }

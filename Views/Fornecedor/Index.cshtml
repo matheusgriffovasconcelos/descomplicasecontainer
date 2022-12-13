@@ -26,16 +26,20 @@
                         <h6 class="card-header text-center h5">@item.Nome</h6>
                         <div class="card-body">
                             <h4 class="card-title">@item.Categoria.Nome</h4>
-                            <p class="card-subtitle text-secondary mb-2">Premium</p>
+                            @if(item.IsPremium) 
+                            {
+                                <p class="card-subtitle text-secondary mb-2">Premium</p>
+                            }
                             <div class="card-text">
                                 Localização: @item.Cidade - @item.UF <br>
                             </div>
                         </div>
                         <div class="card-footer">
-                            <b>R$ 4.000,00 à R$ 8.000,00</b>
+                            <p class="lead-sm">Preços à partir de: R$@item.aPartir,00</p>
+                        </div>
                             @if (User.IsInRole("admin"))
                             {
-                                <p class="text-center">
+                                <div class="text-center p-2">
                                     <a class="btn btn-success btn-sm" asp-action="Alterar" asp-route-id="@item.Id" title="Alterar">
                                         <i class="bi bi-pencil"></i>
                                     </a>
@@ -43,9 +47,8 @@
                                     <a class="btn btn-danger btn-sm" asp-action="Excluir" asp-route-id="@item.Id" title="Excluir">
                                         <i class="bi bi-trash"></i>
                                     </a>
-                                </p>
+                                </div>
                             }
-                        </div>
                     </div>
                 </div>
             }
