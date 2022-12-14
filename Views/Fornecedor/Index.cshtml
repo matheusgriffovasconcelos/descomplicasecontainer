@@ -32,7 +32,7 @@
                                 <div class="card-body">
                                     <h6 class="card-title lead">@fornecedor.Caracteristicas</h6>
                                     <hr>
-                                    <p class="card-subtitle text-secondary mb-2">Premium</p>
+                                    <p class="card-subtitle text-secondary mb-2">@(fornecedor.IsPremium ? "Premium" : "")</p>
                                     <div class="card-text">
                                         Localização: @fornecedor.Cidade - @fornecedor.UF <br>
                                     </div>
