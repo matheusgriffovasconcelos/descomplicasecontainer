@@ -3,6 +3,7 @@ using System;
 using Auth.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DescomplicaseApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221214024310_v3")]
+    partial class v3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
@@ -93,6 +96,9 @@ namespace DescomplicaseApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("IdUsuario")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("NumConvidados")
                         .HasColumnType("INTEGER");
 
@@ -102,7 +108,14 @@ namespace DescomplicaseApp.Migrations
                     b.Property<double>("ValorOrcamento")
                         .HasColumnType("REAL");
 
+                    b.Property<int>("idFornecedor")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("IdUsuario");
+
+                    b.HasIndex("idFornecedor");
 
                     b.ToTable("Orcamentos");
                 });
@@ -182,7 +195,7 @@ namespace DescomplicaseApp.Migrations
                             Email = "admin@email.com",
                             IsAdmin = true,
                             Nome = "Administrador do Sistema",
-                            Senha = "$2a$10$q86Z51G.wIE1YvICoEGOVOc/tyagknoTMyQFV7RJcZ3OtVnKo1ylq"
+                            Senha = "$2a$10$4FTl7.wA9sdweMvmxwh71.Ym62x5ACDZcvWKG2sP7PCgST2FHbMZO"
                         });
                 });
 
@@ -195,6 +208,25 @@ namespace DescomplicaseApp.Migrations
                         .IsRequired();
 
                     b.Navigation("Categoria");
+                });
+
+            modelBuilder.Entity("Auth.Models.OrcamentoModel", b =>
+                {
+                    b.HasOne("Auth.Models.UsuarioModel", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("IdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Auth.Models.FornecedorModel", "Fornecedor")
+                        .WithMany()
+                        .HasForeignKey("idFornecedor")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Fornecedor");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Auth.Models.ProdutoModel", b =>

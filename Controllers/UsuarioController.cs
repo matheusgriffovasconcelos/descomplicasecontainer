@@ -114,4 +114,31 @@ public class UsuarioController : Controller
         _db.SaveChanges();
         return RedirectToAction("Index");
     }
+
+    [HttpGet]
+    public IActionResult AlterarSenha(int id)
+    {
+
+        var usuario = _db.Usuarios.Find(id);
+        if (usuario is null)
+        {
+            return RedirectToAction("Index");
+        }
+        return View(usuario);
+    }
+
+    [HttpPost]
+    public IActionResult AlterarSenha(int id, UsuarioModel usuario)
+    {
+        var usuarioOriginal = _db.Usuarios.Find(id);
+        if (usuarioOriginal is null)
+        {
+            return RedirectToAction("Index");
+        }
+
+        usuarioOriginal.Senha = usuario.Senha;
+        _db.SaveChanges();
+        return RedirectToAction("Index");
+    }
+    
 }

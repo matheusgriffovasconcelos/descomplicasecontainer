@@ -21,6 +21,13 @@ public class FornecedorController : Controller
         _env = env;
     }
 
+
+    private void CarregarCategorias2(int? idCategoria = null)
+    {
+        var categorias2 = _db.Categorias.OrderBy(c => c.Nome).ToList();
+        ViewBag.Categorias2 = categorias2;
+    }
+
     [AllowAnonymous]
     public IActionResult Index()
     {
@@ -29,6 +36,7 @@ public class FornecedorController : Controller
             .AsNoTracking()
             .OrderBy(p => p.Nome)
             .ToList();
+        CarregarCategorias2();
         return View(fornecedores);
     }
 
@@ -40,7 +48,7 @@ public class FornecedorController : Controller
         ViewBag.Categorias = categoriasSelectList;
     }
 
-    [AllowAnonymous]
+
     [HttpGet]
     public IActionResult Cadastrar()
     {
@@ -49,8 +57,6 @@ public class FornecedorController : Controller
         return View(fornecedor);
     }
 
-    [AllowAnonymous]
-    [Authorize]
     [HttpPost]
     public IActionResult Cadastrar(FornecedorModel fornecedor)
     {
@@ -80,6 +86,7 @@ public class FornecedorController : Controller
         return View(fornecedor);
     }
 
+    
     [HttpPost]
     public IActionResult Alterar(int id, FornecedorModel fornecedor)
     {

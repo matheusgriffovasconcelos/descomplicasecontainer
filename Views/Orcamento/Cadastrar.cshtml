@@ -1,7 +1,7 @@
 @model OrcamentoModel
 
 <div class="container p-3">
-    <h2 class="text-danger opacity-50 text-center">Selecionar Fornecedores</h2>
+    <h2 class="text-danger opacity-50 text-center">Orçamento</h2>
     <hr>
     <form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
         <input type="hidden" asp-for="@Model.Id">
@@ -9,49 +9,82 @@
 </div>
 
 <div class="container">
-    <div>
-        <button class="btn btn-danger opacity-50 btn-block" data-bs-toggle="collapse" data-bs-target="#conteudo">Escolher Fornecedores <i class="bi-chevron-down"></i> </button>
-    </div>
-    <div class="collapse" id="conteudo">
-        @foreach (var item in @ViewBag.Categorias)
-        {
-            <h6 class="h5 text-secondary p-3">Categoria: @item.Nome <br></h6>
-            <div class="row row-cols-2 row-cols-lg-4 mb-5">
-                @foreach (var fornecedor in @ViewBag.Fornecedores)
-                {
-                    if (item.Id == fornecedor.IdCategoria)
+
+    <form method="post">
+        <div class="row">
+            <div class="form-floating col">
+                <select name="genero" id="genero" class="form-select">
+                    @* <option value=""></option> *@
+                    <option value="M">Dia</option>
+                    <option value="F">Noite</option>
+                </select>
+                <label for="genero" class="mx-2">Turno</label>
+            </div>
+            <div class="form-floating col">
+                <input type="number" class="form-control" placeholder="Nome" asp-for="@Model.NumConvidados">
+                <label class="mx-2" asp-for="@Model.NumConvidados"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.NumConvidados"></span>
+            </div>
+            <div class="form-floating col">
+                <input type="number" class="form-control" placeholder="E-mail" asp-for="@Model.ValorDesejado">
+                <label class="mx-2" asp-for="@Model.ValorDesejado"></label><br>
+                <span class="text-danger" asp-validation-for="@Model.ValorDesejado"></span>
+            </div>
+        </div>
+        @* <div class="my-2 d-flex d-flex justify-content-end">
+            <a asp-action="Index" class="btn btn-sm btn-danger">Cancelar</a>
+            <input type="submit" class="btn btn-sm btn-secondary ms-2" value="Calcular Orçamento">
+            </div> *@
+
+
+        @* <div>
+            <button class="btn btn-danger opacity-50 btn-block" data-bs-toggle="collapse" data-bs-target="#conteudo">Escolher Fornecedores <i class="bi-chevron-down"></i> </button>
+            </div> *@
+        <div class="" id="conteudo">
+            @foreach (var item in @ViewBag.Categorias)
+            {
+                <h6 class="h5 text-secondary p-3">Categoria: @item.Nome <br></h6>
+                <div class="row row-cols-2 row-cols-lg-4 mb-5">
+                    @foreach (var fornecedor in @ViewBag.Fornecedores)
                     {
-                        <div class="col">
-                            <div class="card">
-                                <a href='@($"{fornecedor.CaminhoImagem}?{DateTime.Now}")' data-lightbox="@fornecedor.Id" data-title="@fornecedor.Nome">
-                                    <img src='@($"{fornecedor.CaminhoImagem}?{DateTime.Now}")' class="card-img-top img-responsive img-thumbnail">
-                                </a>
-                                <h6 class="card-header text-center h5 text-info">@fornecedor.Nome</h6>
-                                <div class="card-body">
-                                    <h6 class="card-title lead">@fornecedor.Caracteristicas</h6>
-                                    <p class="card-subtitle text-secondary mb-2">Premium</p>
-                                    <div class="card-text">
-                                        Localização: @fornecedor.Cidade - @fornecedor.UF <br>
-                                    </div>
-                                    <div class="card-text py-2">
-                                        <span class="text-bg-success">à partir de: R$@fornecedor.aPartir</span><br>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="sim" id="marcafornecedor">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Selecionar Esse Fornecedor
-                                        </label>
+                        if (item.Id == fornecedor.IdCategoria)
+                        {
+                            <div class="col">
+                                <div class="card h-100">
+                                    <a href='@($"{fornecedor.CaminhoImagem}?{DateTime.Now}")' data-lightbox="@fornecedor.Id" data-title="@fornecedor.Nome">
+                                        <img src='@($"{fornecedor.CaminhoImagem}?{DateTime.Now}")' class="card-img-top img-responsive img-thumbnail">
+                                    </a>
+                                    <h6 class="card-header text-center h5 text-info">@fornecedor.Nome</h6>
+                                    <div class="card-body">
+                                        <h6 class="card-title lead">@fornecedor.Caracteristicas</h6>
+                                        <p class="card-subtitle text-secondary mb-2">Premium</p>
+                                        <div class="card-text">
+                                            Localização: @fornecedor.Cidade - @fornecedor.UF <br>
+                                        </div>
+                                        <div class="card-text py-2">
+                                            <span class="text-bg-success">à partir de: R$@fornecedor.aPartir</span><br>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="@fornecedor.Id" id="marcafornecedor" name="fornecedores">
+                                            <label class="form-check-label" for="marcafornecedor">
+                                                Selecionar Esse Fornecedor
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        @* <p>@fornecedor.Nome | @fornecedor.Email | @fornecedor.IdCategoria</p> *@
+                            @* <p>@fornecedor.Nome | @fornecedor.Email | @fornecedor.IdCategoria</p> *@
+                        }
                     }
-                }
-            </div>
-            <hr class="text-secondary">
-        }
-    </div>
+                </div>
+                <hr class="text-secondary">
+            }
+        </div>
+        <div class="my-2 d-flex d-flex justify-content-end">
+            <a asp-action="Index" class="btn btn-sm btn-danger">Cancelar</a>
+            <input type="submit" class="btn btn-sm btn-secondary ms-2" value="Calcular Orçamento">
+        </div>
+    </form>
 </div>
 
 <div style="height: 80vh;"></div>

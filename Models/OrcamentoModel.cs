@@ -10,15 +10,6 @@ public class OrcamentoModel
     [Display(Name = "Código Orçamento")]
     public int Id { get; set; }
 
-    [ForeignKey("Usuario")]
-    public int IdUsuario { get; set; }
-    public UsuarioModel Usuario { get; set; }
-
-    [NotMapped]
-    [ForeignKey("Fornecedor")]
-    public int idFornecedor { get; set; }
-    public FornecedorModel Fornecedor { get; set; }
-
     [Display(Name = "Faixa de Valor Desejado")]
     public double ValorDesejado { get; set; }
 
@@ -29,6 +20,13 @@ public class OrcamentoModel
     public double ValorOrcamento { get; set; }
 
     [NotMapped]
-    public ICollection<FornecedorModel> ListaFornecedores { get; set; }
+    public string [] fornecedores { get; set; }
+
+    [NotMapped]
+    public double Sobra
+    {
+        get { return this.ValorDesejado - this.ValorOrcamento; }
+    }
+
 
 }

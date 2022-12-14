@@ -10,6 +10,8 @@ using SixLabors.ImageSharp.Processing;
 namespace Auth.Controllers;
 
 
+[Authorize(Roles = "admin")]
+
 public class OrcamentoController : Controller
 {
     private readonly AppDbContext _db;
@@ -21,23 +23,26 @@ public class OrcamentoController : Controller
         _env = env;
     }
 
+    [AllowAnonymous]
     public IActionResult Index()
     {
         var orcamentos = _db.Orcamentos
-            .Include(p => p.Fornecedor)
-            .Include(p => p.Usuario)
             .AsNoTracking()
             .ToList();
         return View(orcamentos);
     }
 
-    // private void CarregarFornecedores(int? idFornecedor = null)
-    // {
-    //     var fornecedores = _db.Fornecedores.OrderBy(c => c.Nome).ToList();
-    //     var fornecedoresSelectList = new SelectList(
-    //         fornecedores, "Id", "Nome", idFornecedor);
-    //     ViewBag.Fornecedores = fornecedoresSelectList;
-    // }
+    [AllowAnonymous]
+    public IActionResult Mostrar(int idOrcamento)
+    {
+        idOrcamento = 1;
+        var orcamentos = _db.Orcamentos
+            .AsNoTracking()
+            .ToList()
+            .LastOrDefault(p => p.Id == idOrcamento);
+
+        return View(orcamentos);
+    }
 
     private void CarregarFornecedores(int? idFornecedor = null)
     {
@@ -53,8 +58,9 @@ public class OrcamentoController : Controller
 
     [AllowAnonymous]
     [HttpGet]
-    public IActionResult Cadastrar()
+    public IActionResult Cadastrar(int id)
     {
+        var usuario = _db.Usuarios.Find(id);
         CarregarFornecedores();
         CarregarCategorias();
         var orcamento = new OrcamentoModel();
@@ -62,18 +68,24 @@ public class OrcamentoController : Controller
     }
 
     [AllowAnonymous]
-    [Authorize]
     [HttpPost]
-    public IActionResult Cadastrar(OrcamentoModel orcamento)
+    public IActionResult Cadastrar(int id, int[] fornecedores, OrcamentoModel orcamento)
     {
+    
         if (!ModelState.IsValid)
         {
-            CarregarFornecedores(orcamento.idFornecedor);
-            CarregarCategorias(orcamento.Fornecedor.IdCategoria);
+            
             return View(orcamento);
         }
-        _db.Orcamentos.Add(orcamento);
+
+        for (int i=0; i<fornecedores.Length; i++)
+        {
+            var fornecedor = _db.Fornecedores.Find(fornecedores[i]);
+            orcamento.ValorOrcamento = orcamento.ValorOrcamento + fornecedor.aPartir;   
+        }
+        orcamento.Id = 1;
+        _db.Orcamentos.Update(orcamento);
         _db.SaveChanges();
-        return RedirectToAction("Index");
+        return RedirectToAction("Mostrar", new { idOrcamento = orcamento.Id });
     }
 }

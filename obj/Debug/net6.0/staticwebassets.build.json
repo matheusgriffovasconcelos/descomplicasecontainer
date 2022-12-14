@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w5WGVhZrqBiXfyKBhgPTPFAKK7ysZN3GFWfebj4Ssmo=",
+  "Hash": "Ng+pfSQJVB9f5amKT/wiPhIvWjOM4rhC/nH61X6oDMc=",
   "Source": "DescomplicaseApp",
   "BasePath": "_content/DescomplicaseApp",
   "Mode": "Default",
@@ -253,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\fornecedor\\000004.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000005.jpg",
+      "SourceId": "DescomplicaseApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "BasePath": "_content/DescomplicaseApp",
+      "RelativePath": "img/fornecedor/000005.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\fornecedor\\000005.jpg"
     },
     {
       "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo.jpeg",

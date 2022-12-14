@@ -5,12 +5,12 @@
     <hr>
     <p class="lead"><b>Código</b>: @Model.Id</p>
     <p class="lead"><b>Nome</b>: @Model.Nome</p>
-    <p class="lead text-bg-danger">Deseja realmente excluir o fornecedor <span class="text-info"><u>@Model.Nome</u></span>?</p>
+    <p class="col-4 lead text-bg-danger">Deseja realmente excluir o fornecedor <span class="text-info">@Model.Nome</span>?</p>
     <form method="post" asp-action="ProcessarExclusao">
         <input type="hidden" asp-for="@Model.Id">
         <p class="">
             <a asp-action="Index" class="btn btn-sm btn-secondary">Não</a>
-            <input type="submit" class="btn btn-sm btn-danger" value="Sim">
+            <input type="submit" class="btn btn-sm btn-danger" value="Confirmar Exclusão">
         </p>
     </form>
 </div>

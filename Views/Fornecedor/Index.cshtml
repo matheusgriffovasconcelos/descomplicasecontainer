@@ -14,45 +14,52 @@
 <hr class="text-danger opacity-50">
 @if (Model.Count() > 0)
 {
-    <div class="container mb-5" style="height: 100vh;">
-        <div class="row row-cols-12 row-cols-lg-4">
-            @foreach (var item in Model)
-            {
-                <div class="col">
-                    <div class="card h-100">
-                        <a href='@($"{item.CaminhoImagem}?{DateTime.Now}")' data-lightbox="@item.Id" data-title="@item.Nome">
-                            <img src='@($"{item.CaminhoImagem}?{DateTime.Now}")' class="card-img-top img-responsive img-thumbnail">
-                        </a>
-                        <h6 class="card-header text-center h5">@item.Nome</h6>
-                        <div class="card-body">
-                            <h4 class="card-title">@item.Categoria.Nome</h4>
-                            @if(item.IsPremium) 
-                            {
-                                <p class="card-subtitle text-secondary mb-2">Premium</p>
-                            }
-                            <div class="card-text">
-                                Localização: @item.Cidade - @item.UF <br>
+    <div class="container mb-5">
+        @foreach (var item in @ViewBag.Categorias2)
+        {
+            <h6 class="h5 text-secondary p-3">Categoria: @item.Nome <br></h6>
+            <div class="row row-cols-2 row-cols-lg-4 mb-5">
+                @foreach (var fornecedor in Model)
+                {
+                    if (item.Id == fornecedor.IdCategoria)
+                    {
+                        <div class="col">
+                            <div class="card h-100">
+                                <a href='@($"{fornecedor.CaminhoImagem}?{DateTime.Now}")' data-lightbox="@fornecedor.Id" data-title="@fornecedor.Nome">
+                                    <img src='@($"{fornecedor.CaminhoImagem}?{DateTime.Now}")' class="card-img-top img-responsive img-thumbnail">
+                                </a>
+                                <h6 class="card-header text-center h5 text-info">@fornecedor.Nome</h6>
+                                <div class="card-body">
+                                    <h6 class="card-title lead">@fornecedor.Caracteristicas</h6>
+                                    <hr>
+                                    <p class="card-subtitle text-secondary mb-2">Premium</p>
+                                    <div class="card-text">
+                                        Localização: @fornecedor.Cidade - @fornecedor.UF <br>
+                                    </div>
+                                    <div class="card-text py-2">
+                                        <span class="text-bg-warning">à partir de: R$@fornecedor.aPartir</span><br>
+                                    </div>
+                                </div>
+                                @if (User.IsInRole("admin"))
+                                {
+                                    <div class="text-center p-2">
+                                        <a class="btn btn-success btn-sm" asp-action="Alterar" asp-route-id="@fornecedor.Id" title="Alterar">
+                                            <i class="bi bi-pencil"></i>
+                                        </a>
+
+                                        <a class="btn btn-danger btn-sm" asp-action="Excluir" asp-route-id="@fornecedor.Id" title="Excluir">
+                                            <i class="bi bi-trash"></i>
+                                        </a>
+                                    </div>
+                                }
                             </div>
                         </div>
-                        <div class="card-footer">
-                            <p class="lead-sm">Preços à partir de: R$@item.aPartir,00</p>
-                        </div>
-                            @if (User.IsInRole("admin"))
-                            {
-                                <div class="text-center p-2">
-                                    <a class="btn btn-success btn-sm" asp-action="Alterar" asp-route-id="@item.Id" title="Alterar">
-                                        <i class="bi bi-pencil"></i>
-                                    </a>
 
-                                    <a class="btn btn-danger btn-sm" asp-action="Excluir" asp-route-id="@item.Id" title="Excluir">
-                                        <i class="bi bi-trash"></i>
-                                    </a>
-                                </div>
-                            }
-                    </div>
-                </div>
-            }
-        </div>
+                    }
+                }
+            </div>
+            <hr class="text-secondary">
+        }
 
     </div>
 }
