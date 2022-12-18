@@ -26,20 +26,19 @@
                 <span class="text-danger" asp-validation-for="@Model.NumConvidados"></span>
             </div>
             <div class="form-floating col">
-                <input type="number" class="form-control" placeholder="E-mail" asp-for="@Model.ValorDesejado">
+                <select class="form-select" asp-for="@Model.ValorDesejado">
+                    <option value=10000>Até R$10000</option>
+                    <option value=20000>Até R$20000</option>
+                    <option value=30000>Até R$30000</option>
+                    <option value=50000>Até R$50000</option>
+                    <option value=60000>Até R$60000</option>
+                    <option value=100000>Até R$100000</option>
+                </select>
                 <label class="mx-2" asp-for="@Model.ValorDesejado"></label><br>
                 <span class="text-danger" asp-validation-for="@Model.ValorDesejado"></span>
             </div>
         </div>
-        @* <div class="my-2 d-flex d-flex justify-content-end">
-            <a asp-action="Index" class="btn btn-sm btn-danger">Cancelar</a>
-            <input type="submit" class="btn btn-sm btn-secondary ms-2" value="Calcular Orçamento">
-            </div> *@
-
-
-        @* <div>
-            <button class="btn btn-danger opacity-50 btn-block" data-bs-toggle="collapse" data-bs-target="#conteudo">Escolher Fornecedores <i class="bi-chevron-down"></i> </button>
-            </div> *@
+    
         <div class="" id="conteudo">
             @foreach (var item in @ViewBag.Categorias)
             {
@@ -73,7 +72,7 @@
                                     </div>
                                 </div>
                             </div>
-                            @* <p>@fornecedor.Nome | @fornecedor.Email | @fornecedor.IdCategoria</p> *@
+                           
                         }
                     }
                 </div>

@@ -33,6 +33,19 @@ COPY --from=build /source/descomplicase.db ./
 #executa o aplicativo
 ENTRYPOINT ["dotnet", "DescomplicaseApp.dll"]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 #para iniciar o serviço do docker
 # sudo dockerd
 

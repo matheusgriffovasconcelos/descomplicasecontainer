@@ -1,3 +1,5 @@
+@using Microsoft.AspNetCore.Identity;
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -50,7 +52,7 @@
                             <ul class="dropdown-menu">
                                 <p class="dropdown-header text-info"><b>@User.Identity.Name</b></p>
                                 <li>
-                                    <a href="#" class="dropdown-item">Perfil</a>
+                                    <a asp-action="Alterar" asp-controller="Usuario" class="dropdown-item">Perfil</a>
                                 </li>
                                 <li>
                                     <a asp-controller="Usuario" asp-action="AlterarSenha" class="dropdown-item">Alterar Senha</a>

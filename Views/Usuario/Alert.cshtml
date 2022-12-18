@@ -1,0 +1,7 @@
+@model UsuarioModel
+
+<div class="col-4 mx-auto p-5">
+    <h2 class="display-6  text-center text-danger">ATENÇÃO!!</h2>
+    <h3 class="lead text-bg-danger p-5 ">Você não pode excluir o usuário <b class="text-info text-uppercase">&ldquo;@User.Identity.Name</b>&rdquo; pois ele está logado no sistema!!</h3>
+    <a asp-action="Index" class="btn btn-sm btn-secondary">Clique aqui para voltar</a>
+</div>

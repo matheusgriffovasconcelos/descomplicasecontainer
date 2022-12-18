@@ -98,7 +98,11 @@ public class UsuarioController : Controller
         {
             return RedirectToAction("Index");
         }
-        return View(usuarios);
+        if (User.Identity.Name.ToString() != (usuarios.Nome))
+        {
+            return View(usuarios);
+        }
+        return View("Alert");
     }
 
     [HttpPost]

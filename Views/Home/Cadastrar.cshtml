@@ -38,7 +38,7 @@
                                 <span class="small text-danger ps-2" asp-validation-for="@Model.NomeConjuge"></span>
                             </div>
                             <div class="col form-floating mb-1">
-                                <input class="form-control" type="date" value="2023-01-01" asp-for="@Model.DataCasamento" placeholder="Sobrenome">
+                                <input class="form-control" type="date" value="2023-01-01" asp-for="@Model.DataCasamento" id="datacasamento" name="datacasamento">
                                 <label class="p-3" asp-for="@Model.DataCasamento"></label>
                                 <span class="small text-danger ps-2" asp-validation-for="@Model.DataCasamento"></span>
                             </div>
@@ -67,3 +67,12 @@
             </div>
     </section>
 </body>
+
+<script>
+    var input = document.getElementById('datacasamento');
+    input.addEventListener('change', function () {
+        var agora = new Date();
+        var escolhida = new Date(this.value);
+        if (escolhida < agora) this.value = [agora.getFullYear(), agora.getMonth() + 1, agora.getDate()].map(v => v < 10 ? '0' + v : v).join('-');
+    });
+</script>

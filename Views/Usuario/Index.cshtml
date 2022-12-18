@@ -57,8 +57,10 @@
                                     <td>
                                         <a asp-action="Alterar" asp-route-id="@usuario.IdUsuario" class="btn btn-sm btn-success">
                                             <i class="bi bi-pencil" title="Alterar"></i> </a>
+                                        @* @if ((@User.Identity.Name.ToString()) != usuario.Nome){ *@
                                         <a asp-action="Excluir" asp-route-id="@usuario.IdUsuario" class="btn btn-sm btn-danger">
                                             <i class="bi bi-trash" title="Excluir"></i></a>
+                                        @* } *@
                                     </td>
                                 </tr>
                             }
