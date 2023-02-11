@@ -13,3 +13,7 @@ Front-end com Bootstrap5.
 
 Site pronto para deploy.
 
+
+Para rodar container localmente: docker-compose up -d   (arquivo docker-compose.yml
+
+Para deploy: arquivo -> docker-compose.prod.yml
