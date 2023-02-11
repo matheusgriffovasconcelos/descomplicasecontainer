@@ -3,7 +3,7 @@
 
 Descomplicase Site.
 
-Projeto de criação de site, utilizando ASP.NET Core MVC, traefik(proxy reverso), docker e portainer.
+Projeto de aplicação WEB completo, utilizando ASP.NET Core MVC, traefik(proxy reverso), docker e portainer.
 
 Site com funcionalidades como:
 Sistema de Login e Validação.
