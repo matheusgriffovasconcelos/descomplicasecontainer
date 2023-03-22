@@ -2,6 +2,7 @@ using System.Linq;
 using Auth.Data;
 using Auth.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +19,7 @@ public class UsuarioController : Controller
         _db = db;
     }
 
-    
+
     public IActionResult Index()
     {
 
@@ -119,6 +120,7 @@ public class UsuarioController : Controller
         return RedirectToAction("Index");
     }
 
+
     [HttpGet]
     public IActionResult AlterarSenha(int id)
     {
@@ -132,17 +134,25 @@ public class UsuarioController : Controller
     }
 
     [HttpPost]
-    public IActionResult AlterarSenha(int id, UsuarioModel usuario)
+    public IActionResult AlterarSenha(int id, UsuarioModel usuario, string senhaAntiga)
     {
         var usuarioOriginal = _db.Usuarios.Find(id);
+
         if (usuarioOriginal is null)
         {
             return RedirectToAction("Index");
         }
-
-        usuarioOriginal.Senha = usuario.Senha;
+        if (HashPassword(senhaAntiga) == usuarioOriginal.Senha)
+        {
+            ModelState.AddModelError("Senha", "A senha está incorreta.");
+            return View("AlterarSenha");
+        }
+        else
+        {
+            usuarioOriginal.Senha = HashPassword(usuario.Senha);
+        }
         _db.SaveChanges();
         return RedirectToAction("Index");
     }
-    
+
 }

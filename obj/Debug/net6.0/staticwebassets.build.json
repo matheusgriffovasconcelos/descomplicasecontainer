@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ng+pfSQJVB9f5amKT/wiPhIvWjOM4rhC/nH61X6oDMc=",
+  "Hash": "qKTOK+ICSkcGWHp7kGQcPr/BB56ogZhRhLF0bpOmOp4=",
   "Source": "DescomplicaseApp",
   "BasePath": "_content/DescomplicaseApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "DescomplicaseApp\\wwwroot",
       "Source": "DescomplicaseApp",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\css\\estilos.css",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\css\\estilos.css",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "css/estilos.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\estilos.css"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\css\\tabela.css",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\css\\tabela.css",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "css/tabela.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\tabela.css"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\bg-aliancas.webp",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\bg-aliancas.webp",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/bg-aliancas.webp",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\img\\bg-aliancas.webp"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\bg-aliancas2.jpeg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\bg-aliancas2.jpeg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/bg-aliancas2.jpeg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\img\\bg-aliancas2.jpeg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\bg-flores.jpeg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\bg-flores.jpeg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/bg-flores.jpeg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\img\\bg-flores.jpeg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\bg-veu.jpeg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\bg-veu.jpeg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/bg-veu.jpeg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\img\\bg-veu.jpeg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\c1.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\c1.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/c1.jpg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\img\\c1.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\c2.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\c2.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/c2.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\img\\c2.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\c3.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\c3.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/c3.jpg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\img\\c3.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\c4.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\c4.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/c4.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\img\\c4.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000001.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000001.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fornecedor/000001.jpg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fornecedor\\000001.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000002.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000002.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fornecedor/000002.jpg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fornecedor\\000002.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000003.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000003.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fornecedor/000003.jpg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fornecedor\\000003.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000004.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000004.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fornecedor/000004.jpg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fornecedor\\000004.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000005.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fornecedor\\000005.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fornecedor/000005.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fornecedor\\000005.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo.jpeg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo.jpeg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fundo.jpeg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fundo.jpeg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo2.jpeg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo2.jpeg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fundo2.jpeg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fundo2.jpeg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo3.jpeg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo3.jpeg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fundo3.jpeg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fundo3.jpeg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo4.jpeg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo4.jpeg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fundo4.jpeg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fundo4.jpeg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo5.jpeg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\fundo5.jpeg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/fundo5.jpeg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\img\\fundo5.jpeg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\icon.png",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\icon.png",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/icon.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\img\\icon.png"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\produto\\000001.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\produto\\000001.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/produto/000001.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\img\\produto\\000001.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\img\\produto\\000002.jpg",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\img\\produto\\000002.jpg",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "img/produto/000002.jpg",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\img\\produto\\000002.jpg"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\.editorconfig",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\.editorconfig",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/.editorconfig",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\.editorconfig"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\.gitignore",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\.gitignore",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/.gitignore",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\.gitignore"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\.jscsrc",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\.jscsrc",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/.jscsrc",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\.jscsrc"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\.jshintrc",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\.jshintrc",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/.jshintrc",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\.jshintrc"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\bower.json",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\bower.json",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/bower.json",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\bower.json"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\DEPLOY.md",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\DEPLOY.md",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/DEPLOY.md",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\DEPLOY.md"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\css\\lightbox.css",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\css\\lightbox.css",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/css/lightbox.css",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\css\\lightbox.css"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\css\\lightbox.min.css",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\css\\lightbox.min.css",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/css/lightbox.min.css",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\css\\lightbox.min.css"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\images\\close.png",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\images\\close.png",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/images/close.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\images\\close.png"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\images\\loading.gif",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\images\\loading.gif",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/images/loading.gif",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\images\\loading.gif"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\images\\next.png",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\images\\next.png",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/images/next.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\images\\next.png"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\images\\prev.png",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\images\\prev.png",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/images/prev.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\images\\prev.png"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.js",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.js",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/js/lightbox-plus-jquery.js",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.js"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.js",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.js",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/js/lightbox-plus-jquery.min.js",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.map",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.map",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/js/lightbox-plus-jquery.min.map",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\js\\lightbox-plus-jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.js",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.js",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/js/lightbox.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.js"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.min.js",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.min.js",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/js/lightbox.min.js",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.min.js"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.min.map",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.min.map",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/dist/js/lightbox.min.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\dist\\js\\lightbox.min.map"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\examples\\index.html",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\examples\\index.html",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/examples/index.html",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\examples\\index.html"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\Gruntfile.js",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\Gruntfile.js",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/Gruntfile.js",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\Gruntfile.js"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\LICENSE",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\LICENSE",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/LICENSE",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\package.json",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\package.json",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/package.json",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\package.json"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\README.md",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\README.md",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/README.md",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\README.md"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\ROADMAP.md",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\ROADMAP.md",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/ROADMAP.md",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\ROADMAP.md"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\css\\lightbox.css",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\css\\lightbox.css",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/src/css/lightbox.css",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\src\\css\\lightbox.css"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\images\\close.png",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\images\\close.png",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/src/images/close.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\src\\images\\close.png"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\images\\loading.gif",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\images\\loading.gif",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/src/images/loading.gif",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\src\\images\\loading.gif"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\images\\next.png",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\images\\next.png",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/src/images/next.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\src\\images\\next.png"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\images\\prev.png",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\images\\prev.png",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/src/images/prev.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\lightbox2\\src\\images\\prev.png"
     },
     {
-      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\js\\lightbox.js",
+      "Identity": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\lib\\lightbox2\\src\\js\\lightbox.js",
       "SourceId": "DescomplicaseApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\wwwroot\\",
       "BasePath": "_content/DescomplicaseApp",
       "RelativePath": "lib/lightbox2/src/js/lightbox.js",
       "AssetKind": "All",

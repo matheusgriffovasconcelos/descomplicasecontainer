@@ -61,6 +61,10 @@
                                         <a asp-action="Excluir" asp-route-id="@usuario.IdUsuario" class="btn btn-sm btn-danger">
                                             <i class="bi bi-trash" title="Excluir"></i></a>
                                         @* } *@
+                                        @if ((@User.Identity.Name.ToString()) == usuario.Nome){
+                                        <a asp-action="AlterarSenha" asp-route-id="@usuario.IdUsuario" class="btn btn-sm btn-warning">
+                                            <i class="bi bi-pencil" title="AlterarSenha"></i> </a>
+                                        }
                                     </td>
                                 </tr>
                             }

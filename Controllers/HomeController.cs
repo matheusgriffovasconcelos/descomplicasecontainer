@@ -56,7 +56,7 @@ public class HomeController : Controller
             return View(login);
         }
 
-        var usuario = _db.Usuarios.FirstOrDefault(u => u.Email == login.Email);
+        var usuario = _db.Usuarios.FirstOrDefault(u => u.Email == login.Email); 
         if (usuario is null)
         {
             ModelState.AddModelError("Email", "Usuário não encontrado.");

@@ -4,6 +4,12 @@
     <div class="col-4 offset-4 border border-info p-3 rounded">
         <h1 class="display-4 mb-3">Alterar Senha</h1>
         <form method="post">
+
+            <div class="form-floating mb-3">
+                <input type="password" name="senhaAntiga" id="senhaAntiga" class="form-control">
+                <label for="senhaAntiga" class="mx-2">Senha Antiga</label>
+            </div>
+
             <div class="form-floating mb-3">
                 <input class="form-control" asp-for="@Model.Senha" placeholder="123456">
                 <label asp-for="@Model.Senha">Nova Senha</label>

@@ -1944,11 +1944,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\DescomplicaseApp.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\DescomplicaseApp.csproj",
       "projectName": "DescomplicaseApp",
-      "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\DescomplicaseApp.csproj",
+      "projectPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\DescomplicaseApp.csproj",
       "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\obj\\",
+      "outputPath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config"

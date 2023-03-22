@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yZ4LICN7sZZG5GXxFxy0EZpRYWZzHwTvq7F8hG0LEZCBsDxIc1Mlyj7fZd3x/l19JxQUvcsIT7g+dYd0AdSOfw==",
+  "dgSpecHash": "A6KSkoBg8W63NWDlJqjbkbXLJ/H6s0Cw+HDarBJshOIUQ0IWqlJ4ZR8ZLt98e4wpS8wa3pKj5/tNRCNCh0dguw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\Site\\descomplicasecontainer\\DescomplicaseApp.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Área de Trabalho\\IFES\\Site\\descomplicasecontainer\\DescomplicaseApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
